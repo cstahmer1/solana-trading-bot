@@ -1,0 +1,55 @@
+{
+  "name": "solana-trading-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bot": "tsx src/bot/index.ts",
+    "init-db": "tsx src/bot/init_db.ts",
+    "build": "echo 'No build step needed - using tsx to run TypeScript directly'",
+    "docs:architecture": "tsx scripts/gen-architecture.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@jup-ag/api": "^6.0.34",
+    "@raydium-io/raydium-sdk-v2": "^0.2.31-alpha",
+    "@replit/repl-auth": "^1.0.0",
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "^1.98.4",
+    "@types/archiver": "^7.0.0",
+    "@types/morgan": "^1.9.10",
+    "@types/unzipper": "^0.10.11",
+    "@types/ws": "^8.18.1",
+    "archiver": "^7.0.1",
+    "bs58": "^6.0.0",
+    "dependency-cruiser": "^17.3.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "madge": "^8.0.0",
+    "morgan": "^1.10.1",
+    "node-cron": "^3.0.3",
+    "pg": "^8.13.1",
+    "pino": "^9.6.0",
+    "tsx": "^4.20.6",
+    "undici": "^7.16.0",
+    "unzipper": "^0.12.3",
+    "validator": "^13.15.26",
+    "vitest": "^4.0.16",
+    "ws": "^8.18.3",
+    "zod": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/express-session": "^1.18.2",
+    "@types/node": "^22.10.2",
+    "@types/node-cron": "^3.0.11",
+    "@types/pg": "^8.11.10",
+    "typescript": "^5.7.2"
+  }
+}
